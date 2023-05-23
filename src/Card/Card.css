@@ -1,0 +1,33 @@
+.card_box {
+  /* width: calc(100% / 8); */
+  /* display: grid;
+    grid-template-columns: auto ; */
+}
+.cards {
+  width: 100%;
+  position: relative;
+}
+.cards .card_img {
+  width: 95%;
+  border-radius: 10px;
+}
+.card_overlay {
+  position: absolute;
+  color: #fff;
+  top: 0%;
+  right: 0%;
+  display: none;
+}
+.card_box:hover .card_overlay {
+  display: block;
+}
+.card_box:hover .card_img {
+  filter: blur(10px);
+  transform: scale(1.2);
+}
+.card_title {
+  font-family: "Limelight", cursive;
+}
+.card_rating {
+  display: block;
+}
